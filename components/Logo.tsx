@@ -17,7 +17,7 @@ const Logo = () => {
     <Link href ="/" className='overflow-hidden'>
         <div className='flex items-center w-72 h-14'>
             <AspectRatio ratio={16/9} className='flex items-center justify-center'>
-                <h1 className='text-3xl font-bold'>Logo Here</h1>
+                <h1 className='text-3xl font-bold'>Logo here</h1>
             </AspectRatio>
         </div>
     </Link>
