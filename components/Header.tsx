@@ -6,6 +6,7 @@ import { getServerSession } from 'next-auth'
 import { authOptions } from '@/auth'
 import Link from 'next/link'
 import { MessagesSquareIcon } from 'lucide-react'
+import CreateChatButton from './CreateChatBUtton'
 
 async function Header() {
   const session = await getServerSession(authOptions)
@@ -26,6 +27,7 @@ async function Header() {
                   className='text-black dark:text-white'
                 />
               </Link>
+              <CreateChatButton/>
             </>
           ):(
             <>

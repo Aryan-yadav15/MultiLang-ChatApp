@@ -10,7 +10,7 @@ const UserAvatar = (
         className
     }:{
         name?: string | null,
-        image: string | null,
+        image: string | null | undefined,
         className?: string
     }
 ) => {
