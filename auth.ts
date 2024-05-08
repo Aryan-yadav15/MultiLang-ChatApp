@@ -4,6 +4,8 @@ import { signIn } from "next-auth/react";
 import { adminDb } from "./firebase-admin";
 import { FirestoreAdapter } from "@auth/firebase-adapter";
 import { cert } from "firebase-admin/app";
+import type { Adapter } from "next-auth/adapters";
+
 
 export const authOptions: NextAuthOptions = {
     providers: [
@@ -15,4 +17,5 @@ export const authOptions: NextAuthOptions = {
     session: {
         strategy: "jwt",
     },
+    adapter: FirestoreAdapter(adminDb) as Adapter,
 };
